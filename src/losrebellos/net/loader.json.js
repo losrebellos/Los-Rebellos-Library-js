@@ -12,7 +12,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 // JSON loader
 //
-// options is { url: String, data: POST | GET, scope: "this", complete: function, validate: function, error: function }
+// options are { url: String, data: POST | GET, scope: "this", complete: function, validate: function, error: function }
 //
 // function validate(response) {
 //     

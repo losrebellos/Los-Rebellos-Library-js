@@ -1,5 +1,5 @@
 
-com.losrebellos.Point = (function() {
+losrebellos.Point = (function() {
 
     // constructor
 
@@ -7,6 +7,7 @@ com.losrebellos.Point = (function() {
 
         this.x = x || 0;
         this.y = y || 0;
+
     }
 
 
@@ -17,9 +18,11 @@ com.losrebellos.Point = (function() {
         if(!point) {
         
             point = Point.ORIGIN.clone();
+
         }
 
-        return (this.x == point.x && this.y == point.y);
+        return (this.x === point.x && this.y === point.y);
+
     }
     
     
@@ -36,6 +39,7 @@ com.losrebellos.Point = (function() {
         var _deltaY = this.y - point.y;
         
         return Math.sqrt(_deltaY * _deltaY + _deltaX * _deltaX);
+
     }
     
     
@@ -46,12 +50,14 @@ com.losrebellos.Point = (function() {
         if(!point) {
         
             point = Point.ORIGIN.clone();
+
         }
         
         var _deltaX = this.x - point.x;
         var _deltaY = this.y - point.y;
         
         return Math.atan2(_deltaY, _deltaX);
+
     }
     
     
@@ -62,14 +68,17 @@ com.losrebellos.Point = (function() {
         if(!point) {
         
             point = Point.ORIGIN.clone();
+
         }
         
         if(!amount && amount != 0) {
         
             amount = .5;
+            
         }
         
         return new Point(this.x + (point.x - this.x) * amount, this.y + (point.y - this.y) * amount);
+
     }
     
     
@@ -78,11 +87,13 @@ com.losrebellos.Point = (function() {
     Point.prototype.clone = function() {
     
         return new Point(this.x, this.y);
+
     }
 
     Point.prototype.getCoordonates = function() {
 
         return { x: this.x, y: this.y };
+
     }
 
 
@@ -92,4 +103,5 @@ com.losrebellos.Point = (function() {
 
 
     return Point;
+
 })();

@@ -14,7 +14,7 @@
 //
 // useful to load fonts
 // based on Google Web Fonts (https://developers.google.com/webfonts/docs/webfont_loader)
-// options is { fonts:Object, scope:this, complete: function, error: function }
+// options are { fonts:Object, scope:this, complete: function, error: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function FontsLoader(options) {
 

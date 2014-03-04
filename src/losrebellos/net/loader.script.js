@@ -13,7 +13,7 @@
 // Script loader
 //
 // useful to load script based file (js, etc.)
-// options is { url:String, scope:this, complete: function, error: function }
+// options are { url:String, scope:this, complete: function, error: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function ScriptLoader(options) {
 

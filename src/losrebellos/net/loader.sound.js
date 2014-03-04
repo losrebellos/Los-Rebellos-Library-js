@@ -14,7 +14,7 @@
 //
 // useful to load sound
 // use Web Audio API or audio tag
-// options is { context: WAA context || audio tag, preload: Boolean, url: String, scope: this, complete: function, error: function }
+// options are { context: WAA context || audio tag, preload: Boolean, url: String, scope: this, complete: function, error: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function SoundLoader(options) {
 

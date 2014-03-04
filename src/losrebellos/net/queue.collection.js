@@ -13,7 +13,7 @@
 // QueueCollection
 //
 // collections is an Array of Backbone.Collection
-// options is { scope:this, progress: function, complete: function }
+// options are { scope:this, progress: function, complete: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function QueueCollection(collections, options) {
 

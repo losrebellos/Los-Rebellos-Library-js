@@ -1,5 +1,5 @@
 
-com.losrebellos.FluidCanvas = (function() {
+losrebellos.FluidCanvas = (function() {
 
     // id
     // container

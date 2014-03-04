@@ -232,6 +232,20 @@ Navigator.isSamsungS3 = (/GT-I9300/i.test(Navigator.userAgentToLowerCase)
 Navigator.isMSIE = /MSIE/i.test(Navigator.userAgentToLowerCase);
 Navigator.isMSIEMobile = (/IEMobile/i.test(Navigator.userAgentToLowerCase) || (Navigator.isMSIE && Navigator.isWindowsMobile));
 
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+Navigator.getInternetExplorerVersion = function() {
+
+	if(navigator.appName == 'Microsoft Internet Explorer' && /MSIE ([0-9]{1,}[\.0-9]{0,})/.exec(navigator.userAgent) != null) {
+
+		return parseFloat(RegExp.$1);
+
+	}
+
+	return -1;
+
+}
+
 Navigator.isChrome = (Navigator.userAgentToLowerCase.indexOf("chrome") > -1);
 
 Navigator.isFirefox = (Navigator.userAgentToLowerCase.indexOf("mozilla") > -1);

@@ -1,7 +1,7 @@
 
 // useful to add a <div> on top of a canvas element
 
-com.losrebellos.InteractiveLayer = (function() {
+losrebellos.InteractiveLayer = (function() {
 
 	// element
 	// durationClick

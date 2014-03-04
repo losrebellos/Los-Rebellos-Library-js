@@ -13,7 +13,7 @@
 // Text loader
 //
 // useful to load text based file (html, tpl, etc.)
-// options is { url:String, scope:this, complete: function, error: function }
+// options are { url:String, scope:this, complete: function, error: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function TextLoader(options) {
 

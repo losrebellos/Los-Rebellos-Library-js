@@ -13,7 +13,7 @@
 // Queue loader
 //
 // scripts is an Array of loaders
-// options is { scope:this, progress: function, complete: function, error: function }
+// options are { scope:this, progress: function, complete: function, error: function }
 //////////////////////////////////////////////////////////////////////////////////////////
 function QueueLoader(options) {
 
